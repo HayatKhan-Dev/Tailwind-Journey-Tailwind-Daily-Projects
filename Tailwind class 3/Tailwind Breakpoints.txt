@@ -1,0 +1,5 @@
+sm: 640px  (for mobile phones and small tablets)
+md: 768px  (for medium size teblets)
+lg: 1024px (for large devices like laptop)
+xl: 1280px (for extra large screen desktops)
+2xl: 1536px (For extra extra large screens like curve monitors)
