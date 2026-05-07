@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Practice | Class 02</title>
+    <title></title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="font-mono text-4xl font-semibold tracking-tighter">Hey How are you motherfucker's</h1>
-    <p class="w-1/2 mx-auto mt-6 text-lg leading-5 text-justify bg-red-500 p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error itaque laudantium necessitatibus dolore numquam obcaecati commodi laborum pariatur saepe doloremque autem consectetur, eaque assumenda rem porro officiis maxime nostrum earum incidunt consequuntur consequatur nam, odio perspiciatis libero. Sunt, perspiciatis alias?</p>
+    <div class="min-h-screen bg-gradient-to-t from-gray-100 to-gray-300 flex items-center justify-around p-10 md:p-5 gap-10 flex-col-reverse md:flex-row">
+        <div class="w-full md:w-1/2 pl-5 text-center md:text-left">
+            <p class="text-sm tracking-widest text-gray-500 uppercase">Welcome to my website</p>
+            <h1 class="text-3xl mt-2 md:text-5xl tracking-tight leading-tight font-bold">Build Modern Website With <span class="text-orange-700 block">Tailwind CSS</span></h1>
+            <p class="text-gray-700 leading-relaxed mt-4">Tailwind CSS helps build clean and responsive designs faster without writing custom CSS</p>
+            <div class="mt-4 flex flex-col gap-3 md:flex-row">
+                <button class="bg-blue-500 text-white hover:bg-blue-700 transition duration-200 ease-in-out py-3 px-4 rounded-lg">Download CV</button>
+                <button class="transition duration-200 ease-in-out bg-transparent border-2 border-blue-500 py-3 px-4 rounded-lg hover:bg-blue-500 hover:text-white">Get In Touch</button>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img class="w-80 h-80 rounded-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LfdRvCIdTQ2qlrWqnlAN6N6bkkRgvZN1YA&s">
+        </div>
+    </div>
 </body>
 </html>

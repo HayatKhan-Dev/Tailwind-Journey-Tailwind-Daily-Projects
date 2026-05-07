@@ -3,40 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Class 3 | Dashboard Project</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body class="min-h-screen w-full flex items-center justify-center p-10 md:p-5 lg:p-0">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
+  <body class="bg-gray-100 min-h-screen font-sans">
+    <!-- container -->
+    <div class="max-w-7xl mx-auto px-6 py-6">
+        <!-- Header Wrapper Div -->
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold">Dashboard</h1>
+                <p class="text-sm font-extralight text-gray-400 tracking-widest">Welcome Back, Hayat</p>
+            </div>
+            <div>
+                <button class="bg-blue-500 text-white rounded-lg px-4 font-bold cursor-pointer py-2 transition duration-200 ease-in-out transform hover:bg-blue-700 hover:scale-105">+ New Project</button>
+            </div>
         </div>
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="py-10 px-3 w-full bg-gray-200 text-black rounded-2xl text-center shadow-xl transition duration-100ms ease-in-out cursor-pointer hover:scale-105">
-            <p class="text-gray-400 text-center text-sm">This card is for revenue</p>
-            <h2 class="my-2 text-2xl font-bold">Revenue</h2>
-            <p class="text-sm ">Lorem ipsum, dolor sit gott sin amet consectetur adipisicing elit. </p>
-        </div>
+        <!-- Grid card container -->
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 w-full">
+            <div class="bg-white shadow-xl rounded-2xl p-6 w-full transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 hover:shadow-2xl">
+                <h3 class="text-lg text-gray-500 flex items-center justify-between">Users <i class="fa-solid fa-users fa-lg text-black"></i></h3>
+                <p class="my-4 text-2xl text-gray-800 font-bold">1,240</p>
+                <p class="text-green-600">+12% from last month</p>
+            </div>
+            <div class="bg-white shadow-xl rounded-2xl p-6 w-full transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 hover:shadow-2xl">
+                <h3 class="text-lg text-gray-500 flex items-center justify-between">Revenue <i class="fa-solid fa-chart-simple"></i></h3>
+                <p class="my-4 text-2xl text-gray-800 font-bold">$5,400</p>
+                <p class="text-green-600">+8% from last month</p>
+            </div>
+            <div class="bg-white shadow-xl rounded-2xl p-6 w-full transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 hover:shadow-2xl">
+                <h3 class="text-lg text-gray-500 flex items-center justify-between">Orders <i class="fa-solid fa-cart-flatbed"></i></h3>
+                <p class="my-4 text-2xl text-gray-800 font-bold">320</p>
+                <p class="text-green-600">+5% from last month</p>
+            </div>
+            <div class="bg-white shadow-xl rounded-2xl p-6 w-full transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 hover:shadow-2xl">
+                <h3 class="text-lg text-gray-500 flex items-center justify-between">Feedback <i class="fa-regular fa-comment"></i></h3>
+                <p class="my-4 text-2xl text-gray-800 font-bold">85</p>
+                <p class="text-green-600">+12% from last month</p>
+            </div>
+         </div>
+         <!-- Recent Activity container -->
+         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+            <!-- Bigger Box (RECENT ACTIVITY) -->
+             <div class="lg:col-span-2 bg-white rounded-2xl shadow-xl p-6 transition duration-200 ease-in-out hover:shadow-2xl">
+                <h1 class="text-3xl font-bold tracking-wide mb-4">Recent Activity</h1>
+                <div class="flex items-center justify-between border-b-2 border-gray-300 cursor-pointer hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">New User Registered</p><span class="text-sm font-light text-gray-600">2h ago</span></div>
+                <div class="flex items-center justify-between border-b-2 border-gray-300 cursor-pointer hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Payment received from client</p><span class="text-sm text-gray-600 font-light">3h ago</span></div>
+                <div class="flex items-center justify-between border-b-2 border-gray-300 cursor-pointer hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">New order placed</p><span class="text-sm font-light text-gray-600">4h ago</span></div>
+                <div class="flex items-center justify-between border-b-2 border-gray-300 cursor-pointer hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Portfolio project uploaded</p><span class="text-sm font-light text-gray-600">2h ago</span></div>
+                <div class="flex items-center justify-between hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Meeting scheduled</p><span class="text-sm font-light text-gray-600">11h ago</span></div>
+             </div>
+             <!-- Smaller Box (QUICK SUMMARY) -->
+             <div class="bg-white rounded-2xl shadow-xl p-6 transition duration-200 ease-in-out hover:shadow-2xl">
+                <h1 class="text-3xl font-bold tracking-wide mb-4">Quick Summary</h1>
+                <div class="flex items-center justify-between border-b border-gray-300 cursor-pointer hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Total Projects:</p><span class="text-sm text-gray-600 font-light">12</span></div>
+                <div class="flex items-center justify-between cursor-pointer border-b border-gray-300 hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Pending Tasks:</p><span class="text-sm font-light text-gray-600">5</span></div>
+                <div class="flex items-center justify-between cursor-pointer border-b border-gray-300 hover:bg-gray-50 transition px-2"><p class="text-sm font-light text-gray-600 py-4">Completed:</p><span class="text-sm font-light text-gray-600">7</span></div>
+             </div>
+         </div>
     </div>
   </body>
 </html>
